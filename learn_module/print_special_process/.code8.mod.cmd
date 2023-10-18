@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/pass_param_print/code8.mod := printf '%s\n'   code8.o | awk '!x[$$0]++ { print("/home/gyx/Desktop/code/pass_param_print/"$$0) }' > /home/gyx/Desktop/code/pass_param_print/code8.mod

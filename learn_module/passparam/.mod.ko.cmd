@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/code4/mod.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gyx/Desktop/code/code4/mod.ko /home/gyx/Desktop/code/code4/mod.o /home/gyx/Desktop/code/code4/mod.mod.o;  true

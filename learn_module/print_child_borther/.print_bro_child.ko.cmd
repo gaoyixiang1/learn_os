@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/print_child_borther/print_bro_child.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gyx/Desktop/code/print_child_borther/print_bro_child.ko /home/gyx/Desktop/code/print_child_borther/print_bro_child.o /home/gyx/Desktop/code/print_child_borther/print_bro_child.mod.o;  true

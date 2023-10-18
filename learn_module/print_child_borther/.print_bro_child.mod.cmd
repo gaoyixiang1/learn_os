@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/print_child_borther/print_bro_child.mod := printf '%s\n'   print_bro_child.o | awk '!x[$$0]++ { print("/home/gyx/Desktop/code/print_child_borther/"$$0) }' > /home/gyx/Desktop/code/print_child_borther/print_bro_child.mod

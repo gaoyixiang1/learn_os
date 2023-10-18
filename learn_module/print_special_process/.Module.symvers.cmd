@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/pass_param_print/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/gyx/Desktop/code/pass_param_print/Module.symvers -T /home/gyx/Desktop/code/pass_param_print/modules.order -i Module.symvers -e 

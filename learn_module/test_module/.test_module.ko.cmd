@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/code1/test_module.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gyx/Desktop/code/code1/test_module.ko /home/gyx/Desktop/code/code1/test_module.o /home/gyx/Desktop/code/code1/test_module.mod.o;  true

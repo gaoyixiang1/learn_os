@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/pass_param_print/pass_param.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gyx/Desktop/code/pass_param_print/pass_param.ko /home/gyx/Desktop/code/pass_param_print/pass_param.o /home/gyx/Desktop/code/pass_param_print/pass_param.mod.o;  true

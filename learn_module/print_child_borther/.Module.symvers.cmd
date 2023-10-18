@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/code/print_child_borther/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/gyx/Desktop/code/print_child_borther/Module.symvers -T /home/gyx/Desktop/code/print_child_borther/modules.order -i Module.symvers -e 
