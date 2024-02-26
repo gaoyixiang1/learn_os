@@ -39,13 +39,13 @@ int main() {
 
 在学习open源码前，使用perf搞了一个函数流程大概的框架，但不是很完整，又想起来上次跑了刘冰师兄的项目，于是就使用Stack_Analyser进行分析
 
-![image-20231107212501161](.\img\open_1.png)
+<img src=".\img\open_1.png" alt="image-20231107164750209" style="zoom: 67%;" />
+<img src=".\img\open_2.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
-![image-20231107213038885](.\img\open_2.png)
 
 生成的火焰图如图所示：
 
-![image-20231107213337727](.\img\open_3.png)
+<img src=".\img\open_3.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 通过这个图清楚直观的看到函数的调用关系，为后面分析open源码做准备。
 
@@ -523,7 +523,7 @@ cleanup_file:
 
 对于do_dentry_open函数的分析总体来说难度大多了，在这里我只弄清楚了这个函数的大概执行流程，如图所示，至于do_dentry后面都执行了哪些函数，具体查看上面的火焰图。
 
-![image-20231107203643641](.\img\open_10.png)
+<img src=".\img\open_10.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## 1.11 心得体会
 
@@ -708,8 +708,7 @@ struct fd {
 
 
 下图为与进程相关数据结构之间的联系
-
-![image-20231108084323571](.\img\open_12.png)
+<img src=".\img\open_12.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ### 代码实现
 
@@ -832,5 +831,5 @@ MODULE_LICENSE("GPL");
 
 ### 运行结果
 
-![image-20231114162626996](.\img\open_13.png)
+<img src=".\img\open_13.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
