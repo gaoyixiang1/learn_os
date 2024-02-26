@@ -12,7 +12,7 @@
 
 可以用stat命令，查看某个文件的inode信息，格式为stat filename`
 
-![image-20231101210700755](.\img\inode_1.png)
+<img src=".\img\inode_1.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## 硬盘分区的inode信息
 
@@ -22,13 +22,13 @@
 
 查看每个硬盘分区的inode总数和已经使用的数量，可以使用df命令。
 
-![image-20231101211128249](.\img\inode_2.png)
+<img src=".\img\inode_2.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## 查看每个inode区的大小
 
 命令为`　sudo dumpe2fs -h /dev/sda3 | grep "Inode size"`
 
-![image-20231101211223112](.\img\inode_3.png)
+<img src=".\img\inode_3.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## inode号
 
@@ -38,7 +38,7 @@
 
 使用ls -i命令，可以看到当前文件夹下所有的文件名对应的inode号码，使用ls -i filename可以查看filename对应的inode号
 
-![image-20231101211430574](.\img\inode_4.png)
+<img src=".\img\inode_4.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## 目录文件
 
@@ -48,7 +48,7 @@ Unix/Linux系统中，目录（directory）也是一种文件。打开目录，�
 
 ls命令只列出目录文件中的所有文件名，ls -i可以看到当前文件夹下所有的文件名以及对应的inode号码，ls -l可以查看当前文件夹下所有文件的详细信息，文件名，创建时间，权限等
 
-![image-20231101211904462](.\img\inode_5.png)
+<img src=".\img\inode_5.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## 硬链接
 
@@ -58,7 +58,7 @@ ls命令只列出目录文件中的所有文件名，ls -i可以看到当前文�
 
 硬链接使用ln命令来创建，格式为`ln 源文件 目标文件`
 
-![image-20231101212927542](.\img\inode_6.png)
+<img src=".\img\inode_6.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
  
 
@@ -66,7 +66,7 @@ ls命令只列出目录文件中的所有文件名，ls -i可以看到当前文�
 
 反过来，删除一个文件名，就会使得inode节点中的"链接数"减1。当这个值减到0，表明没有文件名指向这个inode，系统就会回收这个inode号码，以及其所对应block区域。
 
-![image-20231101213159976](.\img\inode_7.png)
+<img src=".\img\inode_7.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ==这里顺便说一下目录文件的"链接数"。创建目录时，默认会生成两个目录项："."和".."。前者的inode号码就是当前目录的inode号码，等同于当前目录的"硬链接"；后者的inode号码就是当前目录的父目录的inode号码，等同于父目录的"硬链接"。所以，任何一个目录的"硬链接"总数，总是等于2加上它的子目录总数（含隐藏目录）==。
 
@@ -78,7 +78,7 @@ ls命令只列出目录文件中的所有文件名，ls -i可以看到当前文�
 
 ln -s命令可以创建软链接。`ln -s 源文文件或目录 目标文件或目录`
 
-![image-20231101213237329](.\img\inode_8.png)
+<img src=".\img\inode_8.png" alt="image-20231107164750209" style="zoom: 67%;" />
 
 ## inode的其他作用
 

@@ -101,16 +101,16 @@ int main(int argc, char *argv[]) {
 
 **注意** gdb中并通过命令行的形式进行传参，在这里使用`set args arg1 arg2...`，`break`用来打断点，`print var_name`可以查看对应变量名的内容
 
-![image-20231112202228016](.\img\cp_3.png)
+<img src=".\img\cp_3.png" style="zoom:67%;" />
 
 
 <img src=".\img\cp_4.png" alt="image-20231112202257455" style="zoom: 80%;" />
 
-![image-20231112204408820](.\img\cp_5.png)
+<img src=".\img\cp_5.png" style="zoom:67%;" />
 
 ## 运行结果
 
-![image-20231112203641246](.\img\cp_6.png)
+<img src=".\img\cp_6.png" style="zoom:67%;" />
 
 
 
@@ -118,19 +118,19 @@ int main(int argc, char *argv[]) {
 
 copy文件夹在根目录下，其文件系统类型:/dev/sda3。我们本次选择把copy/test.txt放入到/run/lock里面，此/run/lock类型为tmpfs
 
-![image-20231113093811202](.\img\cp_7.png)
+<img src=".\img\cp_7.png" style="zoom:67%;" />
 
 #### gdb调试
 
 此次将copy目录下的test.txt内容复制到/run/lock/tt.txt中
 
-![image-20231113105540804](.\img\cp_8.png)
+<img src=".\img\cp_8.png" style="zoom:67%;" />
 
 #### copy结果
 
 <img src=".\img\cp_9.png" alt="image-20231113093714641" style="zoom: 80%;" />
 
-![image-20231113094505158](.\img\cp_10.png)
+<img src=".\img\cp_10.png" style="zoom:67%;" />
 
 
 
@@ -239,7 +239,7 @@ ssize_t vfs_read(struct file *file, char __user *buf, size_t count, loff_t *pos)
 
 使用perf生成的火焰图，描述了read的过程：
 
-![image-20231112223330075](.\img\cp_11.png)
+<img src=".\img\cp_11.png" style="zoom:67%;" />
 
 ## sys_write
 
@@ -326,7 +326,8 @@ ssize_t vfs_write(struct file *file, const char __user *buf, size_t count, loff_
 
 其中file_start_write以及file_end_write函数的调用流程如图所示，其原理就是信号量的pv操作
 
-![image-20231112214317606](.\img\cp_12.png)
+<img src=".\img\cp_12.png" style="zoom:67%;" />
+
 
 ### write流程
 
@@ -336,7 +337,8 @@ ssize_t vfs_write(struct file *file, const char __user *buf, size_t count, loff_
 
 
 
-![image-20231112222320778](.\img\cp_14.png) 
+<img src=".\img\cp_14.png" style="zoom:67%;" />
+
 
 
 
