@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/learn_os/print_process_fs_info/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/gyx/Desktop/learn_os/print_process_fs_info/Module.symvers -T /home/gyx/Desktop/learn_os/print_process_fs_info/modules.order -i Module.symvers -e 

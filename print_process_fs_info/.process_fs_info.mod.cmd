@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.mod := printf '%s\n'   process_fs_info.o | awk '!x[$$0]++ { print("/home/gyx/Desktop/learn_os/print_process_fs_info/"$$0) }' > /home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.mod

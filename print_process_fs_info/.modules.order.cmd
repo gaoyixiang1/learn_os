@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/learn_os/print_process_fs_info/modules.order := {   echo /home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.o; :; } > /home/gyx/Desktop/learn_os/print_process_fs_info/modules.order

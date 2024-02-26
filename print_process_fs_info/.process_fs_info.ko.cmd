@@ -1,0 +1,1 @@
+cmd_/home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.ko /home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.o /home/gyx/Desktop/learn_os/print_process_fs_info/process_fs_info.mod.o;  true
